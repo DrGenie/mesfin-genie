@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dr Mesfin Genie – Academic Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Dr Mesfin Genie</h1>
+      <nav>
+        <a href="#info">Info</a>
+        <a href="#impact">Impact</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#engagement">Engagement</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="info">
+      <h2>Candidate Information</h2>
+      <p><strong>Applying for promotion to:</strong> Academic Level C</p>
+      <p><strong>Last promotion:</strong> Initial appointment at Level B on 18 September 2023</p>
+
+      <h3>Formal Qualifications</h3>
+      <ul>
+        <li>PhD in Economics, Ca’ Foscari University of Venice (2019)</li>
+        <li>MSc Health Economics & Management, University of Bologna (2015)</li>
+        <li>MSc Economics, Addis Ababa University (2010)</li>
+        <li>BA Economics, Jimma University (2006)</li>
+      </ul>
+    </section>
+
+    <section id="impact">
+      <h2>Evidence of Impact</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Awards</h3>
+          <ul>
+            <li>SIE Prize Hon. Mention for PhD thesis (2019)</li>
+            <li>SABE-TFI Impact Essay Hon. Mention (2019)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Fellowships</h3>
+          <ul>
+            <li>Duke University (2022–23)</li>
+            <li>Univ. of Aberdeen (2021–26)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Memberships</h3>
+          <ul>
+            <li>ASHE</li>
+            <li>RES</li>
+            <li>iHEA</li>
+            <li>EuHEA</li>
+            <li>VhEP Group</li>
+            <li>Econometric Society</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Research Funding</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Source</th><th>Year</th><th>Role</th><th>Apportioned</th><th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MRFF (MandEval)</td><td>2023</td><td>CI</td><td>$808 440</td><td>$4 570 000</td>
+          </tr>
+          <tr>
+            <td>World Bank (FETP India)</td><td>2025</td><td>Co-lead</td><td>$413 817</td><td>$413 817</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="research">
+      <h2>Selected Publications</h2>
+      <ul class="pub-list">
+        <li>
+          <strong>Antonini et al. (2025)</strong>. Are we ready for the next pandemic? <em>Soc Sci & Med</em>, 366.  
+          <span class="contrib">Conceptualisation, methodology, design, analysis, writing.</span>
+        </li>
+        <li>
+          <strong>Genie et al. (2024)</strong>. Choice Consistency in DCEs: Numeracy Skill? <em>Value in Health</em>, 27(11), 1594–1604.  
+          <span class="contrib">Lead author; survey design; data analysis.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching & Learning</h2>
+      <ul>
+        <li>ECON3111 Behavioural Economics (2025): Developer & Lecturer</li>
+        <li>ECON2112 Health Econ & Finance (2025): Coordinator & Lecturer</li>
+        <li>ECON3011 Intro to Health Econ (2024): Coordinator (CES 4.5/5)</li>
+      </ul>
+    </section>
+
+    <section id="engagement">
+      <h2>Engagement & Service</h2>
+      <ul>
+        <li>Guest Editor, Health Policy & Technology (2024–25)</li>
+        <li>Reviewer: J Health Econ, Health Econ, SSM, Value in Health, BMJ Open</li>
+        <li>Presentations: CDIC 2025, SMDM 2025, IAHPR 2024</li>
+        <li>Co-Lead, World Bank FETP India DCE (2025)</li>
+        <li>NBS reaccreditation contributor; HDR mentorship</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Candidate signature: __________________  Date: 27 May 2025</p>
+  </footer>
+</body>
+</html>

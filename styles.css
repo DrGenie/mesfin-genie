@@ -116,3 +116,22 @@ body.dark-mode a { color:#88c0d0; }
 body.dark-mode table, body.dark-mode th, body.dark-mode td {
   border-color:#555;
 }
+
+/* === Education Section Styles === */
+.education-list {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding-left: 0;
+}
+.education-list li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.education-list li strong {
+  color: var(--primary);
+}
+.education-list .year {
+  color: #555;
+  margin-left: 0.5rem;
+  font-style: italic;
+}

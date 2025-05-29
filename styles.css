@@ -113,6 +113,6 @@ body.dark-mode header, body.dark-mode .top-bar, body.dark-mode .main-nav, body.d
   background:#333; box-shadow:0 2px 4px rgba(0,0,0,0.5);
 }
 body.dark-mode a { color:#88c0d0; }
-body.dark-mode th, body.dark-mode td {
+body.dark-mode table, body.dark-mode th, body.dark-mode td {
   border-color:#555;
 }

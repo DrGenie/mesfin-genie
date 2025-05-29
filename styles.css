@@ -22,52 +22,68 @@ header {
   box-shadow: 0 2px 4px var(--card-shadow);
 }
 header .container {
-  max-width: 900px; margin: auto;
-  display: flex; justify-content: space-between; align-items:center;
+  max-width:900px; margin:auto;
+  display:flex; justify-content:space-between; align-items:center;
   padding:1rem;
 }
-header h1 { font-weight:500; color: var(--heading); }
-nav a { margin-left:1rem; font-weight:500; }
-
-.container {
-  max-width: 900px; margin:2rem auto; padding:0 1rem;
-}
-
-h2 {
-  font-size:1.5rem; margin-bottom:0.5rem;
-  border-bottom:2px solid var(--primary);
-  padding-bottom:0.25rem;
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-size:1.75rem;
   color: var(--heading);
 }
-h3 { font-size:1.2rem; margin-top:1rem; color: var(--heading); }
+nav a {
+  margin-left:1rem;
+  font-weight:500;
+}
+
+.container {
+  max-width:900px; margin:2rem auto; padding:0 1rem;
+}
+
+h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: var(--heading);
+}
+h2 {
+  font-size:1.5rem;
+  margin-bottom:0.5rem;
+  border-bottom:2px solid var(--primary);
+  padding-bottom:0.25rem;
+}
+h3 { font-size:1.25rem; margin-top:1rem; }
 
 ul { list-style: disc inside; margin:1rem 0; }
-.pub-list li { margin-bottom:1rem; }
-.contrib { display:block; font-style:italic; font-size:0.9rem; color:#555; }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap:1rem;
-  margin:1rem 0;
+/* Publications list */
+.pub-list { margin:1rem 0; }
+.pub-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:1rem;
 }
-.card {
-  background: var(--card-bg);
-  padding:1rem;
-  box-shadow: 0 1px 3px var(--card-shadow);
-  border-radius:4px;
+.pub-year {
+  flex: 0 0 80px;
+  font-weight:700;
+  color: var(--primary);
+}
+.pub-year em {
+  display: block;
+  font-weight:400;
+  font-style:normal;
+  color:#555;
+}
+.pub-details {
+  flex:1;
+}
+.pub-details a {
+  color: var(--primary);
 }
 
-table {
-  width:100%; border-collapse: collapse; margin:1rem 0;
-}
-th, td {
-  border:1px solid #ccc; padding:0.5rem; text-align:left;
-}
-th { background: var(--primary); color:#fff; }
-
+/* Footer */
 footer {
-  text-align:center; padding:1rem; background: var(--card-bg);
+  text-align:center;
+  padding:1rem;
+  background: var(--card-bg);
   box-shadow: 0 -1px 4px var(--card-shadow);
   font-size:0.9rem;
 }

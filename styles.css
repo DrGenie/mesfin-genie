@@ -1,43 +1,46 @@
 :root {
-  --primary: #0056b3;
-  --light-bg: #f8f9fa;
+  --primary: #003366;
+  --accent: #006699;
+  --bg: #f5f7fa;
   --text: #333;
   --heading: #222;
   --card-bg: #fff;
-  --card-shadow: rgba(0,0,0,0.1);
+  --shadow: rgba(0,0,0,0.1);
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text);
-  background: var(--light-bg);
-  line-height:1.6;
+  background: var(--bg);
+  font-size: 16px;
+  line-height: 1.6;
 }
-a { color: var(--primary); text-decoration:none; }
+a { color: var(--accent); text-decoration:none; }
 a:hover { text-decoration:underline; }
 
 header {
   background: var(--card-bg);
-  box-shadow: 0 2px 4px var(--card-shadow);
+  box-shadow: 0 2px 4px var(--shadow);
 }
 header .container {
-  max-width:900px; margin:auto;
+  max-width: 1000px; margin:auto;
   display:flex; justify-content:space-between; align-items:center;
   padding:1rem;
 }
 header h1 {
   font-family: 'Merriweather', serif;
-  font-size:1.75rem;
+  font-size: 2rem;
   color: var(--heading);
 }
 nav a {
-  margin-left:1rem;
+  margin-left:1.5rem;
   font-weight:500;
+  font-size: 1rem;
 }
 
 .container {
-  max-width:900px; margin:2rem auto; padding:0 1rem;
+  max-width:1000px; margin:2rem auto; padding:0 1rem;
 }
 
 h2, h3 {
@@ -45,45 +48,54 @@ h2, h3 {
   color: var(--heading);
 }
 h2 {
-  font-size:1.5rem;
-  margin-bottom:0.5rem;
-  border-bottom:2px solid var(--primary);
+  font-size:1.75rem;
+  margin-bottom:0.75rem;
+  border-bottom:3px solid var(--primary);
   padding-bottom:0.25rem;
 }
-h3 { font-size:1.25rem; margin-top:1rem; }
+h3 {
+  font-size:1.3rem;
+  margin-top:1.5rem;
+}
 
 ul { list-style: disc inside; margin:1rem 0; }
+section p, section ul { margin-bottom:1.5rem; }
 
-/* Publications list */
-.pub-list { margin:1rem 0; }
+/* Publications */
+.pub-list { margin-top:1rem; }
 .pub-item {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom:1rem;
+  padding:1rem 0;
+  border-bottom:1px solid #ddd;
 }
+.pub-item:last-child { border-bottom:none; }
 .pub-year {
-  flex: 0 0 80px;
+  flex: 0 0 90px;
   font-weight:700;
   color: var(--primary);
+  font-size:1.1rem;
 }
 .pub-year em {
-  display: block;
+  display:block;
   font-weight:400;
   font-style:normal;
   color:#555;
+  font-size:0.9rem;
 }
 .pub-details {
   flex:1;
-}
-.pub-details a {
-  color: var(--primary);
+  padding-left:1rem;
+  font-size:0.95rem;
+  line-height:1.4;
 }
 
 /* Footer */
 footer {
   text-align:center;
   padding:1rem;
+  margin-top:2rem;
   background: var(--card-bg);
-  box-shadow: 0 -1px 4px var(--card-shadow);
+  box-shadow: 0 -1px 4px var(--shadow);
   font-size:0.9rem;
 }

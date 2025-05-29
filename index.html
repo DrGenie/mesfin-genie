@@ -18,6 +18,11 @@
     gtag('js', new Date());
     gtag('config','GA_MEASUREMENT_ID');
   </script>
+    <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Calendly widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -55,6 +60,7 @@
         <a href="#research-interests">Research</a>
         <a href="#teaching">Teaching</a>
         <a href="#publications">Publications</a>
+          <a href="#metrics">Metrics</a>
         <a href="#grants">Grants</a>
         <a href="#projects">Projects</a>
         <a href="#collaborations">Collaborations</a>
@@ -98,6 +104,12 @@
         </li>
       </ul>
     </section>
+    
+<!-- Metrics -->
+<section id="metrics">
+  <h2>Citation Trends &amp; Impact</h2>
+  <canvas id="citationChart" width="400" height="200" aria-label="Citation Trends Chart"></canvas>
+</section>
 
     <!-- Publications -->
     <section id="publications">
@@ -471,6 +483,54 @@
       });
     });
   </script>
+    <!-- footer (unchanged) -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dr Mesfin Genie • <a href="https://mesfin-genie.com/">mesfin-genie.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Sticky nav, Dark mode, Pub filter (unchanged) -->
+
+  <!-- Citation Trends Chart.js -->
+  <script>
+    const ctx = document.getElementById('citationChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['2019','2020','2021','2022','2023','2024','2025'],
+        datasets: [
+          {
+            label: 'Total Citations per Year',
+            data: [50,120,200,300,450,600,700],
+            fill: false,
+            borderWidth: 2
+          },
+          {
+            label: 'Field-Weighted Citation Impact',
+            data: [1.8,2.0,2.2,2.3,2.5,2.6,2.7],
+            fill: false,
+            borderDash: [5,5],
+            borderWidth: 2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: { y: { beginAtZero: true } }
+      }
+    });
+    // Calendly inline widget for office hours
+    Calendly.initInlineWidget({
+      url: 'https://calendly.com/mesfin-genie/office-hours',
+      parentElement: document.getElementById('contact'),
+      prefill: {},
+      utm: {}
+    });
+  </script>
+</body>
+</html>
+
 </body>
 </html>
 

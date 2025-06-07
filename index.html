@@ -10,10 +10,11 @@
   <meta property="og:title" content="Dr Mesfin Genie – Health Economist">
   <meta property="og:description" content="Explore the research, teaching, and publications of Dr Mesfin Genie, Lecturer in Health Economics.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mesfin-genie.com/">
-  <link rel="canonical" href="https://mesfin-genie.com/">
+  <meta property="og:url" content="https://mesfin-genie.com">
+  <link rel="canonical" href="https://mesfin-genie.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
   <script>
@@ -23,23 +24,37 @@
     gtag('config', 'GA_MEASUREMENT_ID');
   </script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
-  <div class="top-bar" aria-label="University navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary top-bar">
     <div class="container">
-      <a href="https://www.newcastle.edu.au">The University of Newcastle, Australia</a> |
-      <a href="#">Library</a> |
-      <a href="#">Students</a> |
-      <a href="#">Staff</a>
-      <form class="search-form" role="search">
-        <input type="search" aria-label="Search site" placeholder="Search">
-        <button type="submit">Go</button>
-      </form>
+      <a class="navbar-brand" href="https://www.newcastle.edu.au">University of Newcastle, Australia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Staff</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </div>
+  </nav>
 
   <header class="site-header" id="main-header">
     <div class="container header-inner">
@@ -53,21 +68,29 @@
         </p>
       </div>
       <div class="header-actions">
-        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-        <a href="Mesfin-Genie-CV.pdf" class="button" aria-label="Download CV">Download CV</a>
+        <button id="theme-toggle" class="btn btn-outline-dark" aria-label="Toggle dark mode">🌙</button>
+        <a href="Mesfin-Genie-CV.pdf" class="btn btn-primary" aria-label="Download CV">Download CV</a>
       </div>
     </div>
-    <nav class="main-nav" aria-label="Main navigation">
+    <nav class="main-nav navbar navbar-expand-lg navbar-light bg-light">
       <div class="container nav-inner">
-        <a href="#career">Career</a>
-        <a href="#research-interests">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#publications">Publications</a>
-        <a href="#metrics">Metrics</a>
-        <a href="#grants">Grants</a>
-        <a href="#projects">Projects</a>
-        <a href="#collaborations">Collaborations</a>
-        <a href="#contact">Contact</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research-interests">Research</a></li>
+            <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#metrics">Metrics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#grants">Grants</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#collaborations">Collaborations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -75,13 +98,23 @@
   <main class="container" id="main-content">
     <section id="career" class="card">
       <h2><i class="fas fa-briefcase"></i> Career & Biography</h2>
-      <p>Dr Mesfin Genie is a Lecturer in Health Economics at Newcastle Business School, University of Newcastle, Australia, and a Measurement & Regulatory Science Fellow at Duke University. He earned his PhD in Economics from Ca’ Foscari University of Venice (2019), focusing on stated-preference techniques in healthcare decisions. With an MSc in Health Economics & Management (University of Bologna, 2015), an MSc in Economics (Addis Ababa University, 2010), and a BA in Economics (Jimma University, 2006), he has held positions at Ca’ Foscari, University of Aberdeen, Auburn University, and Duke University.</p>
+      <p>Dr Mesfin Genie is a Continuing Lecturer (Assistant Professor) in Health Economics at Newcastle Business School, University of Newcastle, Australia, and a Measurement & Regulatory Science Fellow at Duke University. He earned his PhD in Economics from Ca’ Foscari University of Venice (2019), using stated-preference techniques to study healthcare decisions. He holds an MSc in Health Economics & Management (University of Bologna, 2015), an MSc in Economics (Addis Ababa University, 2010), and a BA in Economics (Jimma University, 2006). He has held positions at Ca’ Foscari, University of Aberdeen, Auburn University, and Duke University.</p>
+    </section>
+
+    <section id="education" class="card">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <ul class="education-list">
+        <li><strong>PhD in Economics</strong>, Ca’ Foscari University of Venice, Italy <span class="year">(2019)</span></li>
+        <li><strong>MSc (Laurea Magistrale) in Health Economics & Management</strong>, University of Bologna, Italy <span class="year">(2015)</span></li>
+        <li><strong>MSc in Economics</strong>, Addis Ababa University, Ethiopia <span class="year">(2010)</span></li>
+        <li><strong>BA in Economics</strong>, Jimma University, Ethiopia <span class="year">(2006)</span></li>
+      </ul>
     </section>
 
     <section id="research-interests" class="card">
       <h2><i class="fas fa-flask"></i> Research Interests</h2>
       <ul>
-        <li><strong>Discrete Choice Experiments (DCEs):</strong> Designing and analyzing choice data to quantify patient preferences.</li>
+        <li><strong>Discrete Choice Experiments (DCEs):</strong> Designing and analysing choice data to quantify patient preferences.</li>
         <li><strong>Eye-Tracking:</strong> Integrating eye-tracking metrics with DCEs to understand attention and information processing.</li>
         <li><strong>Behavioural Economics:</strong> Applying psychological insights to health decision-making.</li>
         <li><strong>Vaccine Mandates & Policy Evaluation:</strong> Assessing impact and trade-offs of public-health interventions.</li>
@@ -105,158 +138,176 @@
 
     <section id="publications" class="card">
       <h2><i class="fas fa-book"></i> Publications</h2>
-      <input type="text" id="pub-search" placeholder="Filter by year or keyword" aria-label="Filter publications">
-      <button id="reset-filter" class="button">Show All</button>
-      <div class="pub-list">
-        <div class="pub-item">
-          <div class="pub-year">2025</div>
-          <div class="pub-details">
-            Antonini, M., <strong>Genie, M. G.</strong>, Attwell, K., Attema, A. E., Ward, J. K., Melegaro, A., ... & Paolucci, F.  
-            Are we ready for the next pandemic? Public preferences and trade-offs between vaccine characteristics and societal restrictions across 21 countries.  
-            <strong><em>Social Science & Medicine, 366</em></strong>, 117687.  
-            <a href="https://doi.org/10.1016/j.socscimed.2025.117687" target="_blank">doi:10.1016/j.socscimed.2025.117687</a> [Q1]
-          </div>
-        </div>
-        <!-- Additional publications as in original HTML -->
+      <div class="d-flex mb-3">
+        <input type="text" id="pub-search" class="form-control me-2" placeholder="Filter by year or keyword" aria-label="Filter publications">
+        <button id="reset-filter" class="btn btn-secondary">Show All</button>
       </div>
-    </section>
-
-    <section id="grants" class="card">
-      <h2><i class="fas fa-hand-holding-usd"></i> Grants & Funding</h2>
-      <table>
-        <thead>
-          <tr><th>Source</th><th>Year</th><th>Role</th><th>Apportioned</th><th>Total</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>MRFF “MandEval”</td><td>2023–</td><td>Chief Investigator</td><td>$808,440</td><td>$4,570,000</td></tr>
-          <tr><td>World Bank FETP India</td><td>2025</td><td>Co-lead</td><td>$413,817</td><td>$413,817</td></tr>
-          <tr><td>CHSF – Conference Travel Scheme</td><td>2025</td><td>Lead</td><td>$3,500</td><td>$3,500</td></tr>
-          <tr><td>CHSF – New Start Scheme</td><td>2024</td><td>Lead</td><td>$5,000</td><td>$5,000</td></tr>
-          <tr><td>CHSF – Conference Travel Scheme</td><td>2024</td><td>Lead</td><td>$3,500</td><td>$3,500</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="projects" class="card">
-      <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
-      <ul>
-        <li>MandEval: Evaluation of COVID-19 vaccine mandates (MRFF)</li>
-        <li>FETP India: Field Epidemiology Training Program decision aid (World Bank)</li>
-        <li>Loneliness support interventions among older adults</li>
-        <li>Telehealth policy evolution post-pandemic</li>
-      </ul>
-    </section>
-
-    <section id="collaborations" class="card">
-      <h2><i class="fas fa-globe"></i> International Collaborations</h2>
-      <p>Partnering with colleagues in Italy, UK, USA, Norway, China, Canada, and 15+ other countries on pandemic policy, clinical trials, and health preference research.</p>
-    </section>
-
-    <section id="contact" class="card">
-      <h2><i class="fas fa-envelope"></i> Contact & Connect</h2>
-      <p>Email: <a href="mailto:mesfin.genie@newcastle.edu.au">mesfin.genie@newcastle.edu.au</a></p>
-      <p>Phone: <a href="tel:+61240551075">(02) 4055 1075</a></p>
-      <p>
-        <a href="https://www.linkedin.com/in/mesfin-genie-ph-d-65634216/" target="_blank">LinkedIn</a> |
-        <a href="https://www.researchgate.net/profile/Mesfin-Genie" target="_blank">ResearchGate</a> |
-        <a href="https://scholar.google.com/citations?user=v2SXM_kAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-        <a href="https://x.com/mesfin_genie" target="_blank">X</a>
-      </p>
-      <img src="qr_code.png" alt="QR Code for Contact Information" width="150">
-      <div id="calendly-widget"></div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 Dr Mesfin Genie • <a href="https://mesfin-genie.com/">mesfin-genie.com</a></p>
-    </div>
-  </footer>
-
-  <script>
-    // Sticky nav
-    window.addEventListener('scroll', () => {
-      document.querySelector('.main-nav').classList.toggle('sticky', window.scrollY > 150);
-    });
-
-    // Dark mode toggle
-    document.getElementById('theme-toggle').addEventListener('click', e => {
-      document.body.classList.toggle('dark-mode');
-      e.target.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    });
-
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    // Publication filter
-    document.getElementById('pub-search').addEventListener('input', e => {
-      const q = e.target.value.toLowerCase();
-      document.querySelectorAll('.pub-item').forEach(item => {
-        item.style.display = item.textContent.toLowerCase().includes(q) ? '' : 'none';
-      });
-    });
-
-    // Reset publication filter
-    document.getElementById('reset-filter').addEventListener('click', () => {
-      document.getElementById('pub-search').value = '';
-      document.querySelectorAll('.pub-item').forEach(item => {
-        item.style.display = '';
-      });
-    });
-
-    // Citation Trends Chart.js
-    const ctx = document.getElementById('citationChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['2019', '2020', '2021', '2022', '2023', '2024', '2025'],
-        datasets: [
-          {
-            label: 'Total Citations per Year',
-            data: [50, 120, 200, 300, 450, 600, 700],
-            fill: false,
-            borderColor: '#1976d2',
-            backgroundColor: '#1976d2',
-            borderWidth: 2
-          },
-          {
-            label: 'Field-Weighted Citation Impact',
-            data: [1.8, 2.0, 2.2, 2.3, 2.5, 2.6, 2.7],
-            fill: false,
-            borderColor: '#388e3c',
-            backgroundColor: '#388e3c',
-            borderDash: [5, 5],
-            borderWidth: 2
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          tooltip: {
-            enabled: true
-          }
-        },
-        scales: {
-          y: { beginAtZero: true }
-        }
-      }
-    });
-
-    // Calendly inline widget
-    Calendly.initInlineWidget({
-      url: 'https://calendly.com/mesfin-genie/office-hours',
-      parentElement: document.getElementById('calendly-widget'),
-      prefill: {},
-      utm: {}
-    });
-  </script>
-</body>
-</html>
+      <div class="pub-item">
+  <div class="pub-year">2025</div>
+  <div class="pub-details">
+    Antonini, M., <strong>Genie, M. G.</strong>, Attwell, K., Attema, A. E., Ward, J. K., Melegaro, A., ... & Paolucci, F.  
+    Are we ready for the next pandemic? Public preferences and trade-offs between vaccine characteristics and societal restrictions across 21 countries.  
+    <strong><em>Social Science & Medicine, 366</em></strong>, 117687.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.socscimed.2025.117687</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2025<br><em>Forthcoming</em></div>
+  <div class="pub-details">
+    Antonini, M., <strong>Genie, M. G.</strong>, Attwell, K., … & Paolucci, F.  
+    Democracy, Trust, and Political Orientation: Unravelling the Role of Individual Political Factors in Vaccine Attitudes.  
+    <strong><em>Journal of Health Politics, Policy and Law</em></strong> (In press) [A ranked in ABDC]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2025<br><em>Forthcoming</em></div>
+  <div class="pub-details">
+    Antonini, M., Attema, A. E., <strong>Genie, M. G.</strong>, ... & Paolucci, F.  
+    Time preferences and COVID-19 vaccination uptake.  
+    <strong><em>European Journal of Health Economics</em></strong> (In press) [A ranked in ABDC]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2024</div>
+  <div class="pub-details">
+    <strong>Genie, M. G.</strong>, Poudel, N., Paolucci, F., & Ngorsuraches, S.  
+    Choice Consistency in Discrete Choice Experiments: Does Numeracy Skill Matter?  
+    <strong><em>Value in Health, 27(11)</em></strong>, 1594-1604.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.jval.2024.07.001</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2024</div>
+  <div class="pub-details">
+    Connor, M. J., <strong>Genie, M. G.</strong>, Dudderidge, T., Wu, H., Sukumar, J., Beresford, M., ... & IP5-MATTER Trial Investigators.  
+    Patients’ Preferences for Cytoreductive Treatments in Newly Diagnosed Metastatic Prostate Cancer: The IP5-MATTER Study.  
+    <strong><em>European Urology Oncology</em></strong>.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.euo.2024.06.010</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2024</div>
+  <div class="pub-details">
+    Antonini, M., <strong>Genie, M. G.</strong>, Attema, A. E., Attwell, K., Balogh, Z. J., Behmane, D., Berardi, C., Brammli-Greenberg, S., Greenland, A., Hagen, T. P., Hinwood, M., James, C., Kellner, A., Kelly, B., Murauskienė, L., McGregor, N., Melegaro, A., Moy, N., Sequeira, A. R., … & Paolucci, F.  
+    Public preferences for vaccination campaigns in the COVID-19 endemic phase: insights from the VaxPref database.  
+    <strong><em>Health Policy and Technology, 13(1)</em></strong>.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.hlpt.2024.100849</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2024</div>
+  <div class="pub-details">
+    Wall, L., Bunzli, S., Nelson, E., Hawke, L. J., <strong>Genie, M. G.</strong>, Hinwood, M., ... & Paolucci, F.  
+    Willingness to participate in placebo-controlled surgical trials of the knee: a discrete choice experiment of patients and surgeons.  
+    <strong><em>The Bone & Joint Journal, 106(12)</em></strong>, 1408-1415.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1302/0301-620X.106B12.BJJ-2023-1266.R2</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2024</div>
+  <div class="pub-details">
+    Prieto, P. A., Antonini, M., Ammi, M., <strong>Genie, M. G.</strong>, & Paolucci, F.  
+    Political determinants of COVID-19 restrictions and vaccine rollouts: The case of regional elections in Italy and Spain.  
+    <strong><em>Health Policy, 145</em></strong>, 105082.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.healthpol.2024.105082</a> [A ranked in ABDC]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2024</div>
+  <div class="pub-details">
+    Khatiwada, A. P., <strong>Genie, M. G.</strong>, Gebremariam, A. G., Lai, T. C., Poudel, N., & Ngorsuraches, S.  
+    Vaccination and non-pharmaceutical interventions during COVID-19: Impact on health and non-health outcomes in the US.  
+    <strong><em>Health Policy and Technology, 13(1)</em></strong>.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.hlpt.2023.100792</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2024</div>
+  <div class="pub-details">
+    Gebremariam, A. G., Abegaz, D., Nigus, H. Y., Argaw, T. L., Gerbaba, M., <strong>Genie, M. G.</strong>, & Paolucci, F.  
+    Vaccine uptake and effectiveness: Why some African countries performed better than the others?  
+    <strong><em>Health Policy and Technology, 13(1)</em></strong>.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.hlpt.2023.100820</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2023</div>
+  <div class="pub-details">
+    <strong>Genie, M. G.</strong>, Ryan, M., & Krucien, N.  
+    Keeping an eye on cost: What can eye tracking tell us about attention to cost information in discrete choice experiments?  
+    <strong><em>Health Economics (United Kingdom), 32(5)</em></strong>.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1002/hec.4658</a> [A* ranked in ABDC]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2022</div>
+  <div class="pub-details">
+    Connor, M. J., <strong>Genie, M. G.</strong>, Burns, D., Bass, E. J., Gonzalez, M., Sarwar, N., Falconer, A., Mangar, S., Dudderidge, T., Khoo, V., Winkler, M., Ahmed, H. U., & Watson, V.  
+    A Systematic Review of Patients’ Values, Preferences, and Expectations for the Treatment of Metastatic Prostate Cancer.  
+    <strong><em>European Urology Open Science, 36</em></strong>.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.euros.2021.10.003</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2022</div>
+  <div class="pub-details">
+    Loría-Rebolledo, L. E., Ryan, M., Watson, V., <strong>Genie, M. G.</strong>, Sakowsky, R. A., Powell, D., & Paranjothy, S.  
+    Public acceptability of non-pharmaceutical interventions to control a pandemic in the UK: A discrete choice experiment.  
+    <strong><em>BMJ Open, 12(3)</em></strong>, e054155.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1136/bmjopen-2021-054155</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2022</div>
+  <div class="pub-details">
+    Sun, Y., Li, H., Andlib, Z., & <strong>Genie, M. G.</strong>  
+    How do renewable energy and urbanization cause carbon emissions? Evidence from advanced panel estimation techniques.  
+    <strong><em>Renewable Energy, 185</em></strong>, 996-1005.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.renene.2021.12.112</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2021</div>
+  <div class="pub-details">
+    <strong>Genie, M. G.</strong>, Ryan, M., & Krucien, N.  
+    To pay or not to pay? Cost information processing in the valuation of publicly funded healthcare.  
+    <strong><em>Social Science & Medicine, 276</em></strong>.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1016/j.socscimed.2021.113822</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2021</div>
+  <div class="pub-details">
+    <strong>Genie, M. G.</strong>, Krucien, N., & Ryan, M.  
+    Weighting or aggregating? Investigating information processing in multi-attribute choices.  
+    <strong><em>Health Economics (United Kingdom), 30(6)</em></strong>.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1002/hec.4245</a> [A* ranked in ABDC]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2021</div>
+  <div class="pub-details">
+    Connor, M. J., <strong>Genie, M. G.</strong>, Gonzalez, M., Sarwar, N., Jayaprakash, K. T., Horan, G., & Ahmed, H. U.  
+    Metastatic prostate cancer men’s attitudes towards treatment of the local tumour and metastasis evaluative research (IP5-MATTER): protocol for a prospective, multicentre discrete choice experiment study.  
+    <strong><em>BMJ Open, 11(11)</em></strong>, e048996.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1136/bmjopen-2021-048996</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2021</div>
+  <div class="pub-details">
+    Chien, F., Hsu, C. C., Andlib, Z., Shah, M. I., Ajaz, T., & <strong>Genie, M. G.</strong>  
+    The role of solar energy and eco-innovation in reducing environmental degradation in China: Evidence from QARDL approach.  
+    <strong><em>Integrated Environmental Assessment and Management, 18(2)</em></strong>, 555-571.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1002/ieam.4500</a> [Q1]
+  </div>
+</div>
+<div class="pub-item">
+  <div class="pub-year">2021</div>
+  <div class="pub-details">
+    Majeed, M. T., Yu, Z., Maqbool, A, <strong>Genie, M. G.</strong>, Ullah, S., & Ahmad, W.  
+    The trade-off between economic growth and environmental quality: does economic freedom asymmetric matter for Pakistan?  
+    <strong><em>Environmental Science and Pollution Research, 28</em></strong>, 41912-41921.  
+    <a href="[invalid url, do not cite] target="_blank">doi:10.1007/s11356-021-13709-9</a> [Q1]
+  </div>
+</div>
